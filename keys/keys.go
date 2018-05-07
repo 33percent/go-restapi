@@ -1,23 +1,23 @@
-package config
+package keys
 
-type Config struct {
-	DB *DBConfig
+type mysqlconnection struct {
+	DB *keysdefine
 }
 
-type DBConfig struct {
+type keysdefine struct {
 	Dialect  string
 	Username string
 	Password string
 	Name     string
 }
 
-func makeconnection() *Config {
-	return &Config{
-		DB: &DBConfig{
+func makeconnection() *mysqlconnection {
+	return &mysqlconnection{
+		DB: &keysdefine{
 			Dialect:  "mysql",
-			Username: "guest",
-			Password: "Guest0000!",
-			Name:     "todoapp",
+			Username: "root",
+			Password: "",
+			Name:     "test",
 		},
 	}
 }
