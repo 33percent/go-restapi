@@ -9,9 +9,10 @@ import (
 
 func main() {
 	keys := keys.makeconnection()
-	fmt.Println(keys)
-	app := &app.App{}
-	app.Initialize(config)
-	app.Run(":3000")
+	fmt.Println(keys);
+	fmt.Println("ajhjash")
+	// app := &app.App{}
+	// app.Initialize(config)
+	// app.Run(":3000")
 
 }
